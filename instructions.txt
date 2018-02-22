@@ -1,0 +1,7 @@
+copy paste code into Atom
+then, save it in the same code folder as the .docx file and save it as a .html file.
+delete the .docx file
+run the following commands from the terminal in the code folder:
+	git add .
+	git commit -m "Enter some random commit message here"
+	git push.
