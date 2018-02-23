@@ -39,7 +39,7 @@ function draw() {
 setInterval(draw, 10);
 ctx.beginPath();
 ctx.arc(50, 50, 10, 0, Math.PI*2);
-ctx.fillStyle = "#0095DD";
+ctx.fillStyle = "#dd0000";
 ctx.fill();
 ctx.closePath();
 var x = canvas.width/2;
@@ -47,7 +47,7 @@ var y = canvas.height-30;
 function draw() {
     ctx.beginPath();
     ctx.arc(x, y, 10, 0, Math.PI*2);
-    ctx.fillStyle = "#0095DD";
+    ctx.fillStyle = "#dd0000";
     ctx.fill();
     ctx.closePath();
 }
@@ -56,7 +56,7 @@ var dy = -2;
 function draw() {
     ctx.beginPath();
     ctx.arc(x, y, 10, 0, Math.PI*2);
-    ctx.fillStyle = "#0095DD";
+    ctx.fillStyle = "#dd0000";
     ctx.fill();
     ctx.closePath();
     x += dx;
@@ -66,7 +66,7 @@ function draw() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     ctx.beginPath();
     ctx.arc(x, y, 10, 0, Math.PI*2);
-    ctx.fillStyle = "#0095DD";
+    ctx.fillStyle = "#dd0000";
     ctx.fill();
     ctx.closePath();
     x += dx;
@@ -75,7 +75,7 @@ function draw() {
 function drawBall() {
     ctx.beginPath();
     ctx.arc(x, y, 10, 0, Math.PI*2);
-    ctx.fillStyle = "#0095DD";
+    ctx.fillStyle = "#dd0000";
     ctx.fill();
     ctx.closePath();
 }
@@ -113,7 +113,7 @@ if(y + dy > canvas.height-ballRadius || y + dy < ballRadius) {
 function drawBall() {
     ctx.beginPath();
     ctx.arc(x, y, ballRadius, 0, Math.PI*2);
-    ctx.fillStyle = "#0095DD";
+    ctx.fillStyle = "#dd0000";
     ctx.fill();
     ctx.closePath();
 }
@@ -170,14 +170,14 @@ function keyUpHandler(paddleX) {
 function drawBall() {
     ctx.beginPath();
     ctx.arc(x, y, ballRadius, 0, Math.PI*2);
-    ctx.fillStyle = "#0095DD";
+    ctx.fillStyle = "#dd0000";
     ctx.fill();
     ctx.closePath();
 }
 function drawPaddle() {
     ctx.beginPath();
     ctx.rect(paddleX, canvas.height-paddleHeight, paddleWidth, paddleHeight);
-    ctx.fillStyle = "#0095DD";
+    ctx.fillStyle = "#dd0000";
     ctx.fill();
     ctx.closePath();
 }
