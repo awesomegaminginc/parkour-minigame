@@ -4,4 +4,4 @@ delete the .docx file
 run the following commands from the terminal in the code folder:
 	git add .
 	git commit -m "Enter some random commit message here"
-	git push.
+	git push
