@@ -1,0 +1,74 @@
+
+<style>
+h1 {
+  color: white;
+  text-align: center;
+}
+
+body {
+  background-color: black;
+  padding: 10px
+}
+
+h2 {
+  text-align: center;
+  color: white;
+}
+
+header {
+  padding: 0px;
+  margin: 100px 50px 0px 50px;
+}
+div {
+  text-align: center;
+}
+</style>
+<script src="//cdn.rawgit.com/mrdoob/three.js/master/build/three.min.js"></script>
+<h1>
+  Parkour Master
+</h1>
+<header>
+
+</header>
+<div>
+  <script>
+    var camera, scene, renderer;
+    var geometry, material, mesh;
+
+    init();
+    animate();
+
+    function init() {
+
+      camera = new THREE.PerspectiveCamera(100, window.innerWidth / window.innerHeight, 0.01, 200);
+      camera.position.z = 1;
+
+      scene = new THREE.Scene();
+
+      geometry = new THREE.BoxGeometry(0.4, 0.4, 0.4);
+      material = new THREE.MeshNormalMaterial();
+
+      mesh = new THREE.Mesh(geometry, material);
+      scene.add(mesh);
+
+      renderer = new THREE.WebGLRenderer({
+        antialias: true
+      });
+      renderer.setSize(window.innerWidth, window.innerHeight);
+      document.body.appendChild(renderer.domElement);
+
+    }
+
+    function animate() {
+
+      requestAnimationFrame(animate);
+
+      mesh.rotation.x += 0.1;
+      mesh.rotation.y += 0.1;
+
+      renderer.render(scene, camera);
+
+    }
+
+  </script>
+</div>
