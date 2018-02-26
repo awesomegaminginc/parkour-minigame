@@ -28,7 +28,7 @@ div {
   Parkour Master
 </h1>
 <header>
-
+  <a href="Parkour.html">Start</a>
 </header>
 <div>
   <script>
